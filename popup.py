@@ -3,7 +3,9 @@ from PIL import Image, ImageTk
 import random
 import os
 
-PASTA_IMAGENS = r"C:/Users/fecartciber/Documents/teste/imagens"
+from pathlib import Path
+
+PASTA_IMAGENS = Path.home() / "Documents" / "teste" / "imagens"
 
 IMAGENS = [
     os.path.join(PASTA_IMAGENS, "Imagem1.png"),
